@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# Experiment outputs: keep the prediction CSVs, ignore checkpoints/adapters/logs
+outputs/**/checkpoint-*/
+outputs/**/runs/
+outputs/**/*.safetensors
+outputs/**/*.bin
+outputs/**/*.pt
+outputs/**/*.pth
+wandb/
+.cometml-runs/
+.comet.config
+
+# NLTK data
+nltk_data/
+
+# OS
+.DS_Store

@@ -1,0 +1,490 @@
+
+--------------------lam_baseline
+                                                               precision    recall  f1-score   support
+
+                             Application to the concrete case       0.88      0.71      0.78       851
+                                              Comparative law       0.00      0.00      0.00         2
+                                                Decision ECHR       0.94      0.58      0.71       130
+                                               Distinguishing       0.71      0.31      0.43        16
+                                       Margin of appreciation       1.00      0.58      0.74        12
+                              Non contestation by the parties       0.83      0.71      0.77        28
+                                                   Overruling       0.00      0.00      0.00         1
+                                       Precedents of the ECHR       0.89      0.69      0.78       214
+                                    Systematic interpretation       0.00      0.00      0.00         1
+                                  Teleological interpretation       0.00      0.00      0.00        12
+       Test of the principle of proportionality - Legal basis       0.68      0.35      0.46        71
+Test of the principle of proportionality - Legitimate purpose       0.85      0.61      0.71        18
+   Test of the principle of proportionality - Proportionality       0.56      0.42      0.48       178
+       Test of the principle of proportionality - Suitability       0.00      0.00      0.00         1
+                                       Textual interpretation       0.00      0.00      0.00         1
+                                                     umatched       0.00      0.00      0.00         0
+
+                                                     accuracy                           0.63      1536
+                                                    macro avg       0.46      0.31      0.37      1536
+                                                 weighted avg       0.83      0.63      0.71      1536
+              precision    recall  f1-score   support
+
+    argument       0.97      0.99      0.98    134545
+non-argument       0.98      0.94      0.96     86660
+
+    accuracy                           0.97    221205
+   macro avg       0.97      0.96      0.97    221205
+weighted avg       0.97      0.97      0.97    221205
+
+invalid segments: 0/3645 -> 1.0
+
+--------------------flan_t5_xxl
+                                                               precision    recall  f1-score   support
+
+                             Application to the concrete case       0.81      0.73      0.77       849
+                                              Comparative law       0.00      0.00      0.00         2
+                                                Decision ECHR       0.93      0.62      0.75       130
+                                               Distinguishing       1.00      0.19      0.32        16
+                                       Margin of appreciation       0.50      0.08      0.14        12
+                              Non contestation by the parties       0.95      0.64      0.77        28
+                                                   Overruling       0.00      0.00      0.00         1
+                                       Precedents of the ECHR       0.85      0.70      0.77       210
+                                    Systematic interpretation       0.00      0.00      0.00         1
+                                  Teleological interpretation       0.00      0.00      0.00        12
+       Test of the principle of proportionality - Legal basis       0.76      0.27      0.40        71
+Test of the principle of proportionality - Legitimate purpose       0.87      0.72      0.79        18
+   Test of the principle of proportionality - Proportionality       0.50      0.31      0.38       178
+       Test of the principle of proportionality - Suitability       0.00      0.00      0.00         1
+                                       Textual interpretation       0.00      0.00      0.00         1
+                                                     umatched       0.00      0.00      0.00         0
+
+                                                     accuracy                           0.63      1530
+                                                    macro avg       0.45      0.27      0.32      1530
+                                                 weighted avg       0.78      0.63      0.69      1530
+              precision    recall  f1-score   support
+
+    argument       0.97      0.97      0.97    130824
+     invalid       0.00      0.00      0.00         0
+non-argument       0.95      0.93      0.94     88353
+
+    accuracy                           0.95    219177
+   macro avg       0.64      0.63      0.64    219177
+weighted avg       0.96      0.95      0.96    219177
+
+invalid segments: 6/3645 -> 0.9983539094650206
+
+--------------------llama_3.1_8b_v0
+                                                               precision    recall  f1-score   support
+
+                             Application to the concrete case       0.82      0.74      0.78       851
+                                              Comparative law       0.00      0.00      0.00         2
+                                                Decision ECHR       0.89      0.54      0.67       130
+                                               Distinguishing       1.00      0.12      0.22        16
+                                       Margin of appreciation       1.00      0.25      0.40        12
+                              Non contestation by the parties       1.00      0.61      0.76        28
+                                                   Overruling       0.00      0.00      0.00         1
+                                       Precedents of the ECHR       0.84      0.73      0.78       214
+                                    Systematic interpretation       0.00      0.00      0.00         1
+                                  Teleological interpretation       0.00      0.00      0.00        12
+       Test of the principle of proportionality - Legal basis       0.71      0.24      0.36        71
+Test of the principle of proportionality - Legitimate purpose       1.00      0.11      0.20        18
+   Test of the principle of proportionality - Proportionality       0.58      0.33      0.42       178
+       Test of the principle of proportionality - Suitability       0.00      0.00      0.00         1
+                                       Textual interpretation       0.00      0.00      0.00         1
+                                                     umatched       0.00      0.00      0.00         0
+
+                                                     accuracy                           0.62      1536
+                                                    macro avg       0.49      0.23      0.29      1536
+                                                 weighted avg       0.79      0.62      0.68      1536
+              precision    recall  f1-score   support
+
+    argument       0.96      0.96      0.96    134485
+     invalid       0.00      0.00      0.00         0
+non-argument       0.96      0.92      0.94     86617
+
+    accuracy                           0.94    221102
+   macro avg       0.64      0.63      0.63    221102
+weighted avg       0.96      0.94      0.95    221102
+
+invalid segments: 26/3645 -> 0.9928669410150892
+
+--------------------llama_3.1_8b_v1
+                                                               precision    recall  f1-score   support
+
+                             Application to the concrete case       0.81      0.20      0.33       851
+                                              Comparative law       0.25      0.50      0.33         2
+                                                Decision ECHR       0.74      0.22      0.34       130
+                                               Distinguishing       0.05      0.12      0.08        16
+                                       Margin of appreciation       0.75      0.75      0.75        12
+                              Non contestation by the parties       0.16      0.36      0.22        28
+                                                   Overruling       0.00      0.00      0.00         1
+                                       Precedents of the ECHR       0.65      0.16      0.26       214
+                                    Systematic interpretation       0.00      0.00      0.00         1
+                                  Teleological interpretation       1.00      0.08      0.15        12
+       Test of the principle of proportionality - Legal basis       0.50      0.07      0.12        71
+Test of the principle of proportionality - Legitimate purpose       0.35      0.39      0.37        18
+   Test of the principle of proportionality - Proportionality       0.36      0.03      0.05       178
+       Test of the principle of proportionality - Suitability       0.00      0.00      0.00         1
+                                       Textual interpretation       0.02      1.00      0.04         1
+                                                     umatched       0.00      0.00      0.00         0
+
+                                                     accuracy                           0.18      1536
+                                                    macro avg       0.35      0.24      0.19      1536
+                                                 weighted avg       0.69      0.18      0.27      1536
+              precision    recall  f1-score   support
+
+    argument       0.62      0.30      0.41    134485
+     invalid       0.00      0.00      0.00         0
+non-argument       0.69      0.21      0.32     86617
+
+    accuracy                           0.27    221102
+   macro avg       0.44      0.17      0.24    221102
+weighted avg       0.65      0.27      0.37    221102
+
+invalid segments: 1386/3645 -> 0.6197530864197531
+
+--------------------llama_3.1_8b_v2
+                                                               precision    recall  f1-score   support
+
+                             Application to the concrete case       0.83      0.74      0.78       851
+                                              Comparative law       0.00      0.00      0.00         2
+                                                Decision ECHR       0.91      0.52      0.66       130
+                                               Distinguishing       1.00      0.12      0.22        16
+                                       Margin of appreciation       1.00      0.08      0.15        12
+                              Non contestation by the parties       0.93      0.50      0.65        28
+                                                   Overruling       0.00      0.00      0.00         1
+                                       Precedents of the ECHR       0.87      0.74      0.80       214
+                                    Systematic interpretation       0.00      0.00      0.00         1
+                                  Teleological interpretation       0.00      0.00      0.00        12
+       Test of the principle of proportionality - Legal basis       0.75      0.25      0.38        71
+Test of the principle of proportionality - Legitimate purpose       1.00      0.06      0.11        18
+   Test of the principle of proportionality - Proportionality       0.64      0.44      0.52       178
+       Test of the principle of proportionality - Suitability       0.00      0.00      0.00         1
+                                       Textual interpretation       0.00      0.00      0.00         1
+                                                     umatched       0.00      0.00      0.00         0
+
+                                                     accuracy                           0.63      1536
+                                                    macro avg       0.50      0.22      0.27      1536
+                                                 weighted avg       0.81      0.63      0.70      1536
+              precision    recall  f1-score   support
+
+    argument       0.97      0.96      0.97    134485
+     invalid       0.00      0.00      0.00         0
+non-argument       0.96      0.94      0.95     86617
+
+    accuracy                           0.95    221102
+   macro avg       0.65      0.63      0.64    221102
+weighted avg       0.97      0.95      0.96    221102
+
+invalid segments: 33/3645 -> 0.9909465020576131
+
+--------------------llama_3.1_8b_v3
+                                                               precision    recall  f1-score   support
+
+                             Application to the concrete case       0.85      0.72      0.78       851
+                                              Comparative law       0.00      0.00      0.00         2
+                                                Decision ECHR       0.94      0.48      0.63       130
+                                               Distinguishing       1.00      0.06      0.12        16
+                                       Margin of appreciation       1.00      0.17      0.29        12
+                              Non contestation by the parties       0.91      0.36      0.51        28
+                                                   Overruling       0.00      0.00      0.00         1
+                                       Precedents of the ECHR       0.86      0.73      0.79       214
+                                    Systematic interpretation       0.00      0.00      0.00         1
+                                  Teleological interpretation       0.00      0.00      0.00        12
+       Test of the principle of proportionality - Legal basis       0.74      0.32      0.45        71
+Test of the principle of proportionality - Legitimate purpose       0.50      0.06      0.10        18
+   Test of the principle of proportionality - Proportionality       0.60      0.46      0.52       178
+       Test of the principle of proportionality - Suitability       0.00      0.00      0.00         1
+                                       Textual interpretation       0.00      0.00      0.00         1
+                                                     umatched       0.00      0.00      0.00         0
+
+                                                     accuracy                           0.62      1536
+                                                    macro avg       0.46      0.21      0.26      1536
+                                                 weighted avg       0.81      0.62      0.69      1536
+              precision    recall  f1-score   support
+
+    argument       0.97      0.94      0.96    134485
+     invalid       0.00      0.00      0.00         0
+non-argument       0.97      0.93      0.95     86617
+
+    accuracy                           0.94    221102
+   macro avg       0.65      0.63      0.64    221102
+weighted avg       0.97      0.94      0.95    221102
+
+invalid segments: 57/3645 -> 0.9843621399176955
+
+--------------------llama_3.1_8b_v4
+                                                               precision    recall  f1-score   support
+
+                             Application to the concrete case       0.83      0.74      0.78       851
+                                              Comparative law       0.00      0.00      0.00         2
+                                                Decision ECHR       0.96      0.49      0.65       130
+                                               Distinguishing       1.00      0.12      0.22        16
+                                       Margin of appreciation       0.60      0.25      0.35        12
+                              Non contestation by the parties       0.90      0.32      0.47        28
+                                                   Overruling       0.00      0.00      0.00         1
+                                       Precedents of the ECHR       0.84      0.71      0.77       214
+                                    Systematic interpretation       0.00      0.00      0.00         1
+                                  Teleological interpretation       0.00      0.00      0.00        12
+       Test of the principle of proportionality - Legal basis       0.78      0.30      0.43        71
+Test of the principle of proportionality - Legitimate purpose       1.00      0.11      0.20        18
+   Test of the principle of proportionality - Proportionality       0.67      0.38      0.49       178
+       Test of the principle of proportionality - Suitability       0.00      0.00      0.00         1
+                                       Textual interpretation       0.00      0.00      0.00         1
+                                                     umatched       0.00      0.00      0.00         0
+
+                                                     accuracy                           0.62      1536
+                                                    macro avg       0.47      0.21      0.27      1536
+                                                 weighted avg       0.81      0.62      0.69      1536
+              precision    recall  f1-score   support
+
+    argument       0.98      0.95      0.96    134485
+     invalid       0.00      0.00      0.00         0
+non-argument       0.96      0.93      0.94     86617
+
+    accuracy                           0.94    221102
+   macro avg       0.65      0.62      0.64    221102
+weighted avg       0.97      0.94      0.96    221102
+
+invalid segments: 52/3645 -> 0.9857338820301783
+
+--------------------llama_3.1_8b_v6
+                                                               precision    recall  f1-score   support
+
+                             Application to the concrete case       0.76      0.39      0.52       851
+                                              Comparative law       0.00      0.00      0.00         2
+                                                Decision ECHR       0.88      0.32      0.47       130
+                                               Distinguishing       0.00      0.00      0.00        16
+                                       Margin of appreciation       0.00      0.00      0.00        12
+                              Non contestation by the parties       0.00      0.00      0.00        28
+                                                   Overruling       0.00      0.00      0.00         1
+                                       Precedents of the ECHR       0.69      0.25      0.37       214
+                                    Systematic interpretation       0.00      0.00      0.00         1
+                                  Teleological interpretation       0.00      0.00      0.00        12
+       Test of the principle of proportionality - Legal basis       0.00      0.00      0.00        71
+Test of the principle of proportionality - Legitimate purpose       0.50      0.06      0.10        18
+   Test of the principle of proportionality - Proportionality       0.12      0.01      0.02       178
+       Test of the principle of proportionality - Suitability       0.00      0.00      0.00         1
+                                       Textual interpretation       0.00      0.00      0.00         1
+                                                     umatched       0.00      0.00      0.00         0
+
+                                                     accuracy                           0.28      1536
+                                                    macro avg       0.18      0.06      0.09      1536
+                                                 weighted avg       0.61      0.28      0.38      1536
+              precision    recall  f1-score   support
+
+    argument       0.97      0.14      0.25    134182
+     invalid       0.00      0.00      0.00         0
+non-argument       0.72      0.17      0.28     86920
+
+    accuracy                           0.15    221102
+   macro avg       0.56      0.10      0.17    221102
+weighted avg       0.87      0.15      0.26    221102
+
+invalid segments: 24/37 -> 0.3513513513513513
+
+--------------------llama_3.3_70b_v0
+                                                               precision    recall  f1-score   support
+
+                             Application to the concrete case       0.85      0.73      0.79       851
+                                              Comparative law       0.00      0.00      0.00         2
+                                                Decision ECHR       0.90      0.53      0.67       130
+                                               Distinguishing       1.00      0.12      0.22        16
+                                       Margin of appreciation       1.00      0.25      0.40        12
+                              Non contestation by the parties       0.89      0.57      0.70        28
+                                                   Overruling       0.00      0.00      0.00         1
+                                       Precedents of the ECHR       0.84      0.76      0.79       214
+                                    Systematic interpretation       0.00      0.00      0.00         1
+                                  Teleological interpretation       0.00      0.00      0.00        12
+       Test of the principle of proportionality - Legal basis       0.76      0.31      0.44        71
+Test of the principle of proportionality - Legitimate purpose       1.00      0.17      0.29        18
+   Test of the principle of proportionality - Proportionality       0.56      0.42      0.48       178
+       Test of the principle of proportionality - Suitability       0.00      0.00      0.00         1
+                                       Textual interpretation       0.00      0.00      0.00         1
+                                                     umatched       0.00      0.00      0.00         0
+
+                                                     accuracy                           0.63      1536
+                                                    macro avg       0.49      0.24      0.30      1536
+                                                 weighted avg       0.81      0.63      0.70      1536
+              precision    recall  f1-score   support
+
+    argument       0.96      0.96      0.96    134485
+     invalid       0.00      0.00      0.00         0
+non-argument       0.96      0.93      0.94     86617
+
+    accuracy                           0.94    221102
+   macro avg       0.64      0.63      0.63    221102
+weighted avg       0.96      0.94      0.95    221102
+
+invalid segments: 30/3645 -> 0.9917695473251029
+
+--------------------llama_3.3_70b_v1
+                                                               precision    recall  f1-score   support
+
+                                                                    0.00      0.00      0.00         0
+                             Application to the concrete case       0.86      0.27      0.41       851
+                                              Comparative law       0.25      0.50      0.33         2
+                                                Decision ECHR       0.61      0.45      0.52       130
+                                               Distinguishing       0.23      0.19      0.21        16
+                                       Margin of appreciation       0.58      0.58      0.58        12
+                              Non contestation by the parties       0.15      0.50      0.23        28
+                                                   Overruling       0.00      0.00      0.00         1
+                                       Precedents of the ECHR       0.64      0.28      0.39       214
+                                    Systematic interpretation       0.14      1.00      0.25         1
+                                  Teleological interpretation       0.00      0.00      0.00        12
+       Test of the principle of proportionality - Legal basis       0.86      0.08      0.15        71
+Test of the principle of proportionality - Legitimate purpose       0.43      0.50      0.46        18
+   Test of the principle of proportionality - Proportionality       0.50      0.03      0.06       178
+       Test of the principle of proportionality - Suitability       0.00      0.00      0.00         1
+                                       Textual interpretation       0.02      1.00      0.04         1
+                                                     umatched       0.00      0.00      0.00         0
+
+                                                     accuracy                           0.26      1536
+                                                    macro avg       0.31      0.32      0.21      1536
+                                                 weighted avg       0.73      0.26      0.35      1536
+              precision    recall  f1-score   support
+
+    argument       0.66      0.45      0.53    134485
+     invalid       0.00      0.00      0.00         0
+non-argument       0.55      0.12      0.19     86617
+
+    accuracy                           0.32    221102
+   macro avg       0.40      0.19      0.24    221102
+weighted avg       0.62      0.32      0.40    221102
+
+invalid segments: 1303/3645 -> 0.6425240054869685
+
+--------------------llama_3.3_70b_v2
+                                                               precision    recall  f1-score   support
+
+                             Application to the concrete case       0.86      0.75      0.80       851
+                                              Comparative law       0.00      0.00      0.00         2
+                                                Decision ECHR       0.92      0.52      0.67       130
+                                               Distinguishing       1.00      0.06      0.12        16
+                                       Margin of appreciation       0.80      0.33      0.47        12
+                              Non contestation by the parties       0.83      0.54      0.65        28
+                                                   Overruling       0.00      0.00      0.00         1
+                                       Precedents of the ECHR       0.87      0.75      0.81       214
+                                    Systematic interpretation       0.00      0.00      0.00         1
+                                  Teleological interpretation       0.00      0.00      0.00        12
+       Test of the principle of proportionality - Legal basis       0.88      0.39      0.54        71
+Test of the principle of proportionality - Legitimate purpose       1.00      0.11      0.20        18
+   Test of the principle of proportionality - Proportionality       0.64      0.48      0.55       178
+       Test of the principle of proportionality - Suitability       0.00      0.00      0.00         1
+                                       Textual interpretation       0.00      0.00      0.00         1
+                                                     umatched       0.00      0.00      0.00         0
+
+                                                     accuracy                           0.65      1536
+                                                    macro avg       0.49      0.25      0.30      1536
+                                                 weighted avg       0.84      0.65      0.72      1536
+              precision    recall  f1-score   support
+
+    argument       0.98      0.96      0.97    134485
+     invalid       0.00      0.00      0.00         0
+non-argument       0.96      0.97      0.97     86617
+
+    accuracy                           0.96    221102
+   macro avg       0.65      0.64      0.64    221102
+weighted avg       0.97      0.96      0.97    221102
+
+invalid segments: 30/3645 -> 0.9917695473251029
+
+--------------------llama_3.3_70b_v3
+                                                               precision    recall  f1-score   support
+
+                             Application to the concrete case       0.87      0.75      0.80       851
+                                              Comparative law       0.00      0.00      0.00         2
+                                                Decision ECHR       0.91      0.53      0.67       130
+                                               Distinguishing       1.00      0.06      0.12        16
+                                       Margin of appreciation       0.75      0.25      0.38        12
+                              Non contestation by the parties       0.83      0.54      0.65        28
+                                                   Overruling       0.00      0.00      0.00         1
+                                       Precedents of the ECHR       0.89      0.74      0.81       214
+                                    Systematic interpretation       0.00      0.00      0.00         1
+                                  Teleological interpretation       0.00      0.00      0.00        12
+       Test of the principle of proportionality - Legal basis       0.81      0.37      0.50        71
+Test of the principle of proportionality - Legitimate purpose       1.00      0.11      0.20        18
+   Test of the principle of proportionality - Proportionality       0.65      0.51      0.57       178
+       Test of the principle of proportionality - Suitability       0.00      0.00      0.00         1
+                                       Textual interpretation       0.00      0.00      0.00         1
+                                                     umatched       0.00      0.00      0.00         0
+
+                                                     accuracy                           0.65      1536
+                                                    macro avg       0.48      0.24      0.29      1536
+                                                 weighted avg       0.84      0.65      0.72      1536
+              precision    recall  f1-score   support
+
+    argument       0.98      0.96      0.97    134485
+     invalid       0.00      0.00      0.00         0
+non-argument       0.96      0.96      0.96     86617
+
+    accuracy                           0.96    221102
+   macro avg       0.65      0.64      0.64    221102
+weighted avg       0.97      0.96      0.97    221102
+
+invalid segments: 34/3645 -> 0.9906721536351166
+
+--------------------llama_3.3_70b_v4
+                                                               precision    recall  f1-score   support
+
+                             Application to the concrete case       0.76      0.79      0.77       851
+                                              Comparative law       0.00      0.00      0.00         2
+                                                Decision ECHR       0.99      0.51      0.67       130
+                                               Distinguishing       1.00      0.06      0.12        16
+                                       Margin of appreciation       1.00      0.25      0.40        12
+                              Non contestation by the parties       1.00      0.14      0.25        28
+                                                   Overruling       0.00      0.00      0.00         1
+                                       Precedents of the ECHR       0.88      0.64      0.74       214
+                                    Systematic interpretation       0.00      0.00      0.00         1
+                                  Teleological interpretation       0.00      0.00      0.00        12
+       Test of the principle of proportionality - Legal basis       0.00      0.00      0.00        71
+Test of the principle of proportionality - Legitimate purpose       1.00      0.11      0.20        18
+   Test of the principle of proportionality - Proportionality       0.74      0.19      0.30       178
+       Test of the principle of proportionality - Suitability       0.00      0.00      0.00         1
+                                       Textual interpretation       0.00      0.00      0.00         1
+                                                     umatched       0.00      0.00      0.00         0
+
+                                                     accuracy                           0.60      1536
+                                                    macro avg       0.46      0.17      0.22      1536
+                                                 weighted avg       0.76      0.60      0.63      1536
+              precision    recall  f1-score   support
+
+    argument       0.97      0.94      0.95    134485
+     invalid       0.00      0.00      0.00         0
+non-argument       0.96      0.95      0.95     86617
+
+    accuracy                           0.94    221102
+   macro avg       0.64      0.63      0.64    221102
+weighted avg       0.97      0.94      0.95    221102
+
+invalid segments: 38/3645 -> 0.9895747599451303
+
+--------------------llama_3.3_70b_v6
+                                                               precision    recall  f1-score   support
+
+                             Application to the concrete case       0.79      0.49      0.61       851
+                                              Comparative law       0.00      0.00      0.00         2
+                                                Decision ECHR       0.90      0.43      0.58       130
+                                               Distinguishing       0.75      0.19      0.30        16
+                                       Margin of appreciation       1.00      0.08      0.15        12
+                              Non contestation by the parties       0.80      0.14      0.24        28
+                                                   Overruling       0.00      0.00      0.00         1
+                                       Precedents of the ECHR       0.80      0.43      0.55       214
+                                    Systematic interpretation       0.00      0.00      0.00         1
+                                  Teleological interpretation       0.00      0.00      0.00        12
+       Test of the principle of proportionality - Legal basis       0.75      0.13      0.22        71
+Test of the principle of proportionality - Legitimate purpose       0.75      0.17      0.27        18
+   Test of the principle of proportionality - Proportionality       0.56      0.13      0.21       178
+       Test of the principle of proportionality - Suitability       0.00      0.00      0.00         1
+                                       Textual interpretation       0.00      0.00      0.00         1
+                                                     umatched       0.00      0.00      0.00         0
+
+                                                     accuracy                           0.40      1536
+                                                    macro avg       0.44      0.14      0.20      1536
+                                                 weighted avg       0.76      0.40      0.51      1536
+              precision    recall  f1-score   support
+
+    argument       0.97      0.39      0.56    134182
+     invalid       0.00      0.00      0.00         0
+non-argument       0.96      0.22      0.36     86920
+
+    accuracy                           0.33    221102
+   macro avg       0.64      0.21      0.31    221102
+weighted avg       0.97      0.33      0.48    221102
+
+invalid segments: 15/37 -> 0.5945945945945945
